@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Advait Parmar is a computer science graduate student focused on systems, machine learning, graphics, and developer tools."
+    />
+    <title>Advait Parmar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav-bar" aria-label="Site navigation">
+      <div class="nav-inner">
+        <a class="site-title" href="#top" aria-label="Advait Parmar home">Advait Parmar</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#writing">Writing</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions" aria-label="Site settings">
+          <button class="theme-button" type="button" data-theme-toggle aria-label="Toggle dark mode">
+            <span aria-hidden="true">◐</span>
+          </button>
+          <button class="theme-button" type="button" data-accent-toggle aria-label="Cycle accent color">
+            <span aria-hidden="true">●</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="top" class="hero" aria-labelledby="intro-title">
+        <div class="container">
+          <p class="eyebrow reveal">Software Engineering Portfolio</p>
+          <h1 id="intro-title" class="reveal">
+            Hey, I'm Advait.<br />
+            <span class="hero-gradient">I build close to the runtime.</span>
+          </h1>
+          <p class="hero-copy reveal">
+            M.S. in Computer Science at UNC Chapel Hill, B.Tech. in CSE from
+            IIT Bombay. Adaptive XR systems, efficient ML inference,
+            visualization, and practical tooling for engineers.
+          </p>
+          <div class="cta-row reveal" aria-label="Profile links">
+            <a class="cta primary" href="mailto:advait.parmar@gmail.com">Get in touch</a>
+            <a class="cta" href="https://github.com/advtparmar">GitHub</a>
+            <a class="cta" href="assets/advait-parmar-resume.pdf">Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="Current status">
+        <div class="container strip-inner reveal">
+          <div>
+            <p class="strip-label">Now</p>
+            <p>M.S. CS at UNC Chapel Hill · XR runtime policies · BCI decoder efficiency · GPU simulation</p>
+          </div>
+          <div>
+            <p class="strip-label">Built with</p>
+            <p>Static HTML, CSS, and JavaScript · Ready for GitHub Pages</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 id="projects-title">Projects</h2>
+            <p>Selected work with measurable implementation details.</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card reveal">
+              <div class="card-meta">
+                <span class="card-year">2026</span>
+                <span>Unity · C# · Python · LightGBM</span>
+              </div>
+              <h3>Adaptive XR Hand-Interaction Governor</h3>
+              <p>
+                Quest runtime governor that adjusts hand-tracking frequency
+                across idle, reach, and interaction phases. Trained a LightGBM
+                intent estimator with 95.19% accuracy and deployed a flattened
+                C# tree policy with dwell and hysteresis protections.
+              </p>
+              <p class="card-status">Case study and source link pending</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-meta">
+                <span class="card-year">2025</span>
+                <span>PyTorch · Mamba · quantization</span>
+              </div>
+              <h3>Brain-to-Text BCI Decoder Efficiency</h3>
+              <p>
+                Implemented GRU, Mamba, and bidirectional Mamba phoneme decoders
+                and compared accuracy, memory, latency, pruning tolerance, and
+                energy under FP32 and FP16 inference settings.
+              </p>
+              <p class="card-status">Notes and benchmark link pending</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-meta">
+                <span class="card-year">2025</span>
+                <span>C++20 · SFML · CMake</span>
+              </div>
+              <h3>STLViz</h3>
+              <p>
+                C++ visual debugging library for STL-style vectors, trees,
+                stacks, deques, sets, and sorting traces while preserving
+                familiar container semantics.
+              </p>
+              <p class="card-status">Demo and source link pending</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing" class="section alt" aria-labelledby="writing-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 id="writing-title">Writing</h2>
+            <p>Notes and deep dives to turn project work into hiring signal.</p>
+          </div>
+
+          <ol class="entry-list">
+            <li class="reveal">
+              <time datetime="2026-04">April 2026</time>
+              <div>
+                <span class="entry-title">Building an Adaptive Hand-Tracking Governor for Quest</span>
+                <p>
+                  How phase detection, hysteresis, and runtime metrics turned an
+                  XR optimization idea into a deployable Unity policy.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time datetime="2026-02">February 2026</time>
+              <div>
+                <span class="entry-title">Benchmarking Brain-to-Text Decoders Under Latency Budgets</span>
+                <p>
+                  A practical comparison of GRU and Mamba sequence models across
+                  PER, memory, energy, and inference precision.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time datetime="2025-11">November 2025</time>
+              <div>
+                <span class="entry-title">Real-Time Boids: Scheduling, Profiling, and Metal Kernels</span>
+                <p>
+                  Refactoring a simulation into schedulable tasks, then moving
+                  the hot path to GPU compute for higher boid counts.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 id="experience-title">Experience</h2>
+            <p>Research, engineering, and applied ML work.</p>
+          </div>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <time>2024 – 2026</time>
+              <div>
+                <h3>University of North Carolina at Chapel Hill</h3>
+                <p>M.S. in Computer Science.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time>2023 – 2024</time>
+              <div>
+                <h3>Koita Centre for Digital Health, IIT Bombay</h3>
+                <p>
+                  Built multiomics augmentation and VAE-based sparse branching
+                  pipelines for clinical, genomic, and tabular diabetes data.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time>2022</time>
+              <div>
+                <h3>FinIQ Consulting</h3>
+                <p>
+                  Developed Angular portfolio dashboard features and optimized
+                  backend operations for financial product workflows.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section alt" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 id="skills-title">Focus</h2>
+            <p>Technical areas I want the site to make easy to scan.</p>
+          </div>
+
+          <ul class="tag-list reveal">
+            <li>Python</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Unity</li>
+            <li>PyTorch</li>
+            <li>Graphics</li>
+            <li>Systems</li>
+            <li>ML efficiency</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container reveal">
+          <h2 id="contact-title">Let's build something.</h2>
+          <p class="contact-copy">
+            I am looking for software engineering roles where careful systems
+            work, data-driven iteration, and clear technical writing matter.
+          </p>
+          <div class="cta-row">
+            <a class="cta primary" href="mailto:advait.parmar@gmail.com">advait.parmar@gmail.com</a>
+            <a class="cta" href="https://github.com/advtparmar">github.com/advtparmar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Advait Parmar</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
