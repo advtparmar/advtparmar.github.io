@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Advait Parmar is a computer science graduate student focused on systems, machine learning, graphics, and developer tools."
+      content="Advait Parmar is a software engineer (M.S. CS, UNC Chapel Hill) focused on systems, machine learning, graphics, and developer tools."
     />
     <title>Advait Parmar</title>
     <link rel="stylesheet" href="styles.css" />
@@ -17,7 +17,6 @@
       <div class="nav-inner">
         <a class="site-title" href="#top" aria-label="Advait Parmar home">Advait Parmar</a>
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#writing">Writing</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
@@ -39,12 +38,12 @@
           <p class="eyebrow reveal">Software Engineering Portfolio</p>
           <h1 id="intro-title" class="reveal">
             Hey, I'm Advait.<br />
-            <span class="hero-gradient">I build close to the runtime.</span>
+            <span class="hero-gradient">Software that's measured, not guessed.</span>
           </h1>
           <p class="hero-copy reveal">
-            M.S. in Computer Science at UNC Chapel Hill, B.Tech. in CSE from
-            IIT Bombay. Adaptive XR systems, efficient ML inference,
-            visualization, and practical tooling for engineers.
+            Recent M.S. in Computer Science graduate from UNC Chapel Hill,
+            B.Tech. in CSE from IIT Bombay. Adaptive XR systems, efficient ML
+            inference, visualization, and practical tooling for engineers.
           </p>
           <div class="cta-row reveal" aria-label="Profile links">
             <a class="cta primary" href="mailto:advait.parmar@gmail.com">Get in touch</a>
@@ -58,7 +57,7 @@
         <div class="container strip-inner reveal">
           <div>
             <p class="strip-label">Now</p>
-            <p>M.S. CS at UNC Chapel Hill · XR runtime policies · BCI decoder efficiency · GPU simulation</p>
+            <p>Seeking software engineering roles · Recent work: XR runtime policies, BCI decoder efficiency, GPU simulation</p>
           </div>
           <div>
             <p class="strip-label">Built with</p>
@@ -82,12 +81,16 @@
               </div>
               <h3>Adaptive XR Hand-Interaction Governor</h3>
               <p>
-                Quest runtime governor that adjusts hand-tracking frequency
-                across idle, reach, and interaction phases. Trained a LightGBM
-                intent estimator with 95.19% accuracy and deployed a flattened
-                C# tree policy with dwell and hysteresis protections.
+                Closed-loop Quest 3 runtime governor that downshifts
+                non-critical hand-interaction work across idle, approach, and
+                active states. LightGBM intent estimator (95.19% accuracy)
+                exported as a flattened C# tree; the adaptive policy cut app
+                GPU time 8.6% while increasing task completions 11.2%.
               </p>
-              <p class="card-status">Case study and source link pending</p>
+              <div class="card-links">
+                <a href="https://github.com/advtparmar/XR_Hand_Interaction">GitHub ↗</a>
+                <span class="card-status">Non-thesis M.S. project</span>
+              </div>
             </article>
 
             <article class="card reveal">
@@ -99,9 +102,12 @@
               <p>
                 Implemented GRU, Mamba, and bidirectional Mamba phoneme decoders
                 and compared accuracy, memory, latency, pruning tolerance, and
-                energy under FP32 and FP16 inference settings.
+                energy under FP32, FP16, and BF16 inference settings.
               </p>
-              <p class="card-status">Notes and benchmark link pending</p>
+              <div class="card-links">
+                <a href="https://github.com/advtparmar/BCI_Mamba_project">GitHub ↗</a>
+                <span class="card-status">Reproducible: setup, training, and eval scripts included</span>
+              </div>
             </article>
 
             <article class="card reveal">
@@ -115,55 +121,16 @@
                 stacks, deques, sets, and sorting traces while preserving
                 familiar container semantics.
               </p>
-              <p class="card-status">Demo and source link pending</p>
+              <div class="card-links">
+                <a href="https://github.com/COMP790-HCI/final-project-submission-SidBthegr8">GitHub ↗</a>
+                <span class="card-status">Validated through an HCI user study</span>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="writing" class="section alt" aria-labelledby="writing-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <h2 id="writing-title">Writing</h2>
-            <p>Notes and deep dives to turn project work into hiring signal.</p>
-          </div>
-
-          <ol class="entry-list">
-            <li class="reveal">
-              <time datetime="2026-04">April 2026</time>
-              <div>
-                <span class="entry-title">Building an Adaptive Hand-Tracking Governor for Quest</span>
-                <p>
-                  How phase detection, hysteresis, and runtime metrics turned an
-                  XR optimization idea into a deployable Unity policy.
-                </p>
-              </div>
-            </li>
-            <li class="reveal">
-              <time datetime="2026-02">February 2026</time>
-              <div>
-                <span class="entry-title">Benchmarking Brain-to-Text Decoders Under Latency Budgets</span>
-                <p>
-                  A practical comparison of GRU and Mamba sequence models across
-                  PER, memory, energy, and inference precision.
-                </p>
-              </div>
-            </li>
-            <li class="reveal">
-              <time datetime="2025-11">November 2025</time>
-              <div>
-                <span class="entry-title">Real-Time Boids: Scheduling, Profiling, and Metal Kernels</span>
-                <p>
-                  Refactoring a simulation into schedulable tasks, then moving
-                  the hot path to GPU compute for higher boid counts.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="experience" class="section" aria-labelledby="experience-title">
+      <section id="experience" class="section alt" aria-labelledby="experience-title">
         <div class="container">
           <div class="section-heading reveal">
             <h2 id="experience-title">Experience</h2>
@@ -175,7 +142,7 @@
               <time>2024 – 2026</time>
               <div>
                 <h3>University of North Carolina at Chapel Hill</h3>
-                <p>M.S. in Computer Science.</p>
+                <p>M.S. in Computer Science, graduated 2026.</p>
               </div>
             </li>
             <li class="reveal">
@@ -202,7 +169,7 @@
         </div>
       </section>
 
-      <section class="section alt" aria-labelledby="skills-title">
+      <section class="section" aria-labelledby="skills-title">
         <div class="container">
           <div class="section-heading reveal">
             <h2 id="skills-title">Focus</h2>

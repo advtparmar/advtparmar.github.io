@@ -382,11 +382,24 @@ h3 {
   margin-bottom: 0;
 }
 
+.card-links {
+  margin-top: auto;
+  padding-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.card-links a {
+  font-weight: 650;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
 .card-status {
-  margin-top: auto !important;
-  padding-top: 1rem;
+  color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 0.78rem !important;
+  font-size: 0.78rem;
 }
 
 /* ---- Writing list ---- */
