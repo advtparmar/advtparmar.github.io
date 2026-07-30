@@ -18,6 +18,7 @@
         <a class="site-title" href="#top" aria-label="Advait Parmar home">Advait Parmar</a>
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#projects">Projects</a>
+          <a href="#ongoing">Ongoing</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -115,7 +116,80 @@
         </div>
       </section>
 
-      <section id="experience" class="section alt" aria-labelledby="experience-title">
+      <section id="ongoing" class="section alt" aria-labelledby="ongoing-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 id="ongoing-title">Ongoing work</h2>
+            <p>Active builds — what is working today and what is next.</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card reveal">
+              <div class="card-meta">
+                <span class="card-year">In progress</span>
+                <span>Python · Whisper · QLoRA · OpenCV</span>
+              </div>
+              <h3>Cricket Commentary → Game State</h3>
+              <p>
+                Pipeline that turns broadcast cricket commentary into
+                ball-by-ball structured data. The alignment stage is validated
+                on the 2025 CPL Final: score-bug OCR plus a confirmation-based
+                debouncer anchored 237/240 balls (99%) across both innings, with
+                exact reconstructed timelines. Next: scale to ~50–100 matches to
+                build labeled audio segments, then fine-tune ASR and an
+                event-extraction model against a published benchmark.
+              </p>
+              <div class="card-links">
+                <span class="card-status">Alignment validated; ASR fine-tune next</span>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-meta">
+                <span class="card-year">In progress</span>
+                <span>Swift · SwiftUI · ARKit · SwiftData</span>
+              </div>
+              <h3>RSVP Reader with Eye Tracking</h3>
+              <p>
+                Speed-reading app that watches your eyes with the TrueDepth
+                camera: it auto-pauses when you look away and rewinds on gaze
+                gestures. Built as a timer-free, deterministically testable
+                engine plus a gaze stack — 1€ smoothing, zone hysteresis, and
+                arbitrated blink/wink/dwell detectors — behind 113 tests. Import
+                covers PDF, EPUB, and DOCX through a dependency-free hardened
+                ZIP reader. Next: on-device accuracy tuning and gaze-adaptive
+                speed.
+              </p>
+              <div class="card-links">
+                <span class="card-status">Phase 1 complete; device tuning underway</span>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-meta">
+                <span class="card-year">In progress</span>
+                <span>Swift · SwiftUI · watchOS</span>
+              </div>
+              <h3>Roll For It</h3>
+              <p>
+                Standalone Apple Watch app that settles real decisions with a
+                d20: a character sheet supplies the modifier, you beat the DC,
+                you do the thing. Fairness is decoupled from motion — a fair RNG
+                picks the outcome and the tumble only performs it, so the roll
+                stays unit-testable. Crown spin velocity drives the animation and
+                its haptic ticks. Next: HealthKit-driven stats and a
+                one-tap complication.
+              </p>
+              <div class="card-links">
+                <a href="https://github.com/advtparmar/RollForIt">GitHub ↗</a>
+                <span class="card-status">v1 built; v2 in planning</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-title">
         <div class="container">
           <div class="section-heading reveal">
             <h2 id="experience-title">Experience</h2>
@@ -154,7 +228,7 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="skills-title">
+      <section class="section alt" aria-labelledby="skills-title">
         <div class="container">
           <div class="section-heading reveal">
             <h2 id="skills-title">Competencies</h2>
