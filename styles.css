@@ -310,12 +310,16 @@ h3 {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr auto;
   gap: 1.25rem;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  row-gap: 0;
+  align-content: start;
   background: var(--surface);
   border: 1px solid var(--faint);
   border-radius: var(--radius);
@@ -534,6 +538,13 @@ h3 {
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    grid-row: auto;
   }
 
   .hero {
