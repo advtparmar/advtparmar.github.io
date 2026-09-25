@@ -3,11 +3,14 @@
   const themeToggle = document.querySelector('[data-theme-toggle]')
   const accentToggle = document.querySelector('[data-accent-toggle]')
   const accents = ['blue', 'green', 'rose']
+  const requestedTheme = new URLSearchParams(window.location.search).get('theme')
 
   const savedTheme = localStorage.getItem('theme')
   const savedAccent = localStorage.getItem('accent')
 
-  if (savedTheme) {
+  if (requestedTheme === 'dark' || requestedTheme === 'light') {
+    root.dataset.theme = requestedTheme
+  } else if (savedTheme) {
     root.dataset.theme = savedTheme
   } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     root.dataset.theme = 'dark'
